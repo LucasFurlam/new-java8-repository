@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class OrderStrings {
@@ -13,8 +14,8 @@ public class OrderStrings {
 //        Without using default methods
 //        Collections.sort(words, comparator);
 
-//      Using the default methods and lambda of Java 8
-        words.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+//      Using the default methods, lambda and method references of Java 8
+        words.sort(Comparator.comparing(String::length));
         System.out.println(words);
 
 //        Without using default methods and lambda
@@ -28,8 +29,8 @@ public class OrderStrings {
 //            }
 //        };
 
-//      Using the default methods and lambda of Java 8
-        words.forEach(s -> System.out.println(s));
+//      Using the default methods, lambda and method references of Java 8
+        words.forEach(System.out::println);
     }
 
 }
