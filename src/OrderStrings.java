@@ -14,15 +14,20 @@ public class OrderStrings {
 
         Comparator<String> comparator = new SizeComparator();
 
+//        Without using default methods
 //        Collections.sort(words, comparator);
+
+//        Using the default methods of Java 8
         words.sort(comparator);
 
         System.out.println(words);
 
+//        Without using default methods
 //        for (String w: words) {
 //            System.out.println(w);
 //        }
 
+//        Using the default methods of Java 8
         Consumer<String> consumer = new PrintLine();
         words.forEach(consumer);
 
