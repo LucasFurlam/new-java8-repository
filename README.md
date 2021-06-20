@@ -1,2 +1,11 @@
-# new-java8-features
-This project will cover the new features of Java 8.
+## New Java 8 Features
+This project will cover some of the new features of Java 8.
+
+# Features
+
+- Default Methods
+- Lambda
+- Method Reference
+- Streams
+- API Date
+
